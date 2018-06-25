@@ -4,7 +4,6 @@ body {
 
 
 .slider{
-	background: url(../images/two.png);
 	width: 100%;
 	height: 100vh;
 }
@@ -21,6 +20,8 @@ nav li {
 	padding: 0px 10px;
 	font-size: 14px;
 }
+
+
 
 nav li a {
 	text-decoration: none;
@@ -101,4 +102,12 @@ nav li a {
 	background: black;
 	color: white;
 	border-radius: 0px;
+}
+
+
+
+#myVideo {
+  	margin:0px;
+    min-width: 100%;
+    min-height: 100%;
 }
