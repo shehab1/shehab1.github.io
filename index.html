@@ -28,6 +28,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!--Conversion of Money -->
+  <script src="js/conversion.js"></script>
 </head>
 <body>
 
@@ -134,18 +136,21 @@
               <label>
                 Amount
               </label>
-              <input type="number" name="">
+              <input type="number" id="inputNumber">
             </div>
           </section>
           <section>
             <div>
-              <label>
-                Conversion
-              </label>
-              <h6>5000</h6>
+              <button type="button" class="btn btn-info" onClick="convertNumber('inputNumber')">Convert</button>
             </div>
           </section>
         </form>
+        <section>
+          <h2>
+            Converted Value: <div id="convertedNumber"></div>
+          </h2>
+        </section>
+
       </div>
     </div>
   </div>
