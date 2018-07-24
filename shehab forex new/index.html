@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>SHEHAB FOREX EXCHANGE</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="slider">
+    <div class="container" style="height: 100%">
+      <div class="row"> 
+       
+        <nav>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#rates">RATES</a></li>
+          <li><a href="#exchange">EXCHANGE</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </nav>
+        <div class="one-half column" style="margin-top: 25%;color: white">
+          <h4>SHEHAB FOREX EXCHANGE</h4>
+          <p>...get the best rates without hassle</a>.</p>
+        </div>
+      </div>
+      <div class="social" style="position: absolute;bottom: 0px;width: 100%;text-align: center;padding: 10px 0px;">
+          <a href="" target="blank" style="padding: 10px 10px"><i style="font-size: 18px;" class="fa fa-facebook"></i></a>
+          <a href="" target="blank" style="padding: 10px 10px"><i style="font-size: 18px;" class="fa fa-twitter"></i></a>
+          <a href="" target="blank" style="padding: 10px 10px"><i style="font-size: 18px;" class="fa fa-instagram"></i></a>
+        </div> 
+    </div>
+  </div>
+  <div class="rates" id="rates">
+    <div class="container">
+      <div class="row">
+        <h3>Today's Rates</h3>
+        <table>
+          <thead>
+            <th>Currencies</th>
+            <th>Buying</th>
+            <th>Selling</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dollar</td>
+              <td>4.00</td>
+              <td>4.50</td>
+            </tr>
+            <tr>
+              <td>Pound</td>
+              <td>6.00</td>
+              <td>6.50</td>
+            </tr>
+            <tr>
+              <td>Euro</td>
+              <td>5.00</td>
+              <td>5.50</td>
+            </tr>
+            <tr>
+              <td>Naira</td>
+              <td>1.00</td>
+              <td>1.50</td>
+            </tr>
+            <tr>
+              <td>CFA</td>
+              <td>2.00</td>
+              <td>2.50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="exchange" id="exchange">
+    <div class="container">
+      <div class="row">
+        <h3>Exchange</h3>
+        <form>
+          <section>
+            <label>
+              From
+            </label>
+            <select>
+              <option>Cedis</option>
+              <option>Dollar</option>
+              <option>Pounds</option>
+              <option>Euro</option>
+              <option>Naira</option>
+              <option>CFA</option>
+            </select>
+            <label>
+              To 
+            </label>
+            <select>
+              <option>Cedis</option>
+              <option>Dollar</option>
+              <option>Pounds</option>
+              <option>Euro</option>
+              <option>Naira</option>
+              <option>CFA</option>
+            </select>
+          </section>
+          <section>
+            <div>
+              <label>
+                Amount 
+              </label>
+              <input type="number" name="">
+            </div>
+          </section>
+          <section>
+            <div>
+              <label>
+                Conversion
+              </label>
+              <h6>5000</h6>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <h3>Contact</h3>
+        <form>
+          <div>
+            <label>Name</label>
+            <input type="text" name="name">
+            <label>Email</label>
+            <input type="email" name="email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    
+    </div>
+  </div>
+  <div id="map"></div>
+    <script>
+      // This example displays a map with the language and region set
+      // to Japan. These settings are specified in the HTML script element
+      // when loading the Google Maps JavaScript API.
+      // Setting the language shows the map in the language of your choice.
+      // Setting the region biases the geocoding results to that region.
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: {lat: 5.5698609, lng: -0.171805}
+        });
+      }
+    </script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD96K2DgyO3x0D5aUVSgggwsE_NHbficp0&callback=initMap&language=gh&region=JP"
+    async defer>
+    </script>
+  
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html> 
